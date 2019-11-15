@@ -81,7 +81,7 @@ export default class UserListScreen extends React.Component<Prop,State>{
 
     render() {
         return (
-            <View>
+            <View style={{ flex: 1 }}>
                 <TouchableOpacity onPress={()=>this.getUsers()}><Text>Get Users</Text></TouchableOpacity>
                 <FlatList 
                     data = {this.state.userlist}
